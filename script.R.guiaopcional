@@ -1,0 +1,27 @@
+###Importé database desde excel###
+dataset<-X246544_Data_Nomofobia
+
+###EJERCICIO Nº1###
+summary(dataset)
+str(dataset)
+par(mfcol=c(2,4))
+hist(dataset$Nomofobia)
+hist(dataset$Ansiedad)
+hist(dataset$Estrés)
+hist(dataset$Compulsividad)
+hist(dataset$`Habilidades blandas`)
+hist(dataset$`Resolución de conflictos`)
+hist(dataset$Edad)
+
+par(mfcol=c(2,4))
+boxplot(dataset$Nomofobia)
+boxplot(dataset$Ansiedad)
+boxplot(dataset$Estrés)
+boxplot(dataset$Compulsividad)
+boxplot(dataset$`Habilidades blandas`)
+boxplot(dataset$`Resolución de conflictos`)
+boxplot(dataset$Edad)
+levels(dataset$Género)
+boxplot(dataset$Nomofobia~dataset$Género)
+
+
